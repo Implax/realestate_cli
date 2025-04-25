@@ -8,7 +8,7 @@ from renters import renter_dashboard
 def connect_db():
     return psycopg2.connect(
         dbname="realestate_db",
-        user="your_username",  # change this
+        user="postgres",  # change this
         password=getpass("PostgreSQL password: "),
         host="localhost",
         port="5432"
